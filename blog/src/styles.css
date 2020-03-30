@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f0f2e6;
+}
+
+li {
+  display: inline;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.page_footer {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #282828;
+  color: white;
+}
+
+.page_sidebar {
+  background-color: cadetblue;
+  text-align: center;
+}
