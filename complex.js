@@ -1,27 +1,27 @@
-var Complex = /** @class */ (function () {
-    function Complex(real, imaginary) {
+"use strict";
+class Complex {
+    constructor(real, imaginary) {
         this.real = real;
         this.imaginary = imaginary;
     }
-    Complex.prototype.add = function (number) {
+    add(number) {
         return new Complex(this.real + number.real, this.imaginary + number.imaginary);
-    };
-    Complex.prototype.subtract = function (number) {
+    }
+    subtract(number) {
         return new Complex(this.real - number.real, this.imaginary - number.imaginary);
-    };
-    Complex.prototype.module = function () {
+    }
+    module() {
         return Math.sqrt(Math.pow(this.real, 2) + Math.pow(this.imaginary, 2));
-    };
-    Complex.prototype.toString = function () {
-        return "Complex: real=" + this.real + ", imaginary=" + this.imaginary;
-    };
-    return Complex;
-}());
-var number1 = new Complex(2, 4);
-var number2 = new Complex(6, 8);
-var added = number1.add(number2);
-console.log("add: " + added);
-var subtracted = added.subtract(number1);
-console.log("subtract: " + subtracted);
-var module = subtracted.module();
-console.log("module: " + module);
+    }
+    toString() {
+        return `Complex: real=${this.real}, imaginary=${this.imaginary}`;
+    }
+}
+let number1 = new Complex(2, 4);
+let number2 = new Complex(6, 8);
+let added = number1.add(number2);
+console.log(`add: ${added}`);
+let subtracted = added.subtract(number1);
+console.log(`subtract: ${subtracted}`);
+let module = subtracted.module();
+console.log(`module: ${module}`);
