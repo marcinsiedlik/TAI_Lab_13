@@ -1,4 +1,6 @@
-<input (ngModelChange)="sendFilter($event)"
-       [(ngModel)]="filterText"
-       class="form-control" id="search" placeholder="Wpisz nazwę..."
-       type="search">
+<input (ngModelChange)="sendFilter()" [(ngModel)]="filterText"
+       class="form-control"
+       id="search"
+       placeholder="Wpisz nazwę..."
+       textFormat type="search"
+>
